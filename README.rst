@@ -1,27 +1,4 @@
-PASCAL VOC Writer
+Forked version of PASCAL VOC Writer 
 =================
-
-This library can be used to create image annotation XML files in the PASCAL VOC
-file format.
-
-Install
--------
-
-``pip install pascal-voc-writer``
-
-Use
----
-
-    # Writer(path, width, height)
-
-    writer = Writer('path/to/img.jpg', 800, 400)
-
-
-    # ::addObject(name, xmin, ymin, xmax, ymax)
-
-    writer.addObject('cat', 100, 100, 200, 200)
-
-
-    # ::save(path)
-
-    writer.save('path/to/img.xml')
+This one does not write absolute paths, database, folder, etc.
+Useful to training ResNet-10 like network as described in opencv 3.4.1 package.
